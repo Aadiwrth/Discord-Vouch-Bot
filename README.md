@@ -65,4 +65,4 @@ To fix this simply kick your bot and invite it again.
 
 ## Contact
 
-- GitHub: [newQuery](https://github.com/Aadiwrth)
+- GitHub: [Aadi](https://github.com/Aadiwrth)
