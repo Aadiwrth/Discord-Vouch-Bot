@@ -1,4 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
+const { InteractionResponseFlags } = require("discord-api-types/v10");
 const config = require("../data/config.json");
 const Database = require("better-sqlite3");
 const path = require("path");
@@ -51,7 +52,7 @@ exports.run = async (bot, interaction) => {
     if (interaction.channel.id !== allowedChannel) {
         return interaction.reply({
             content: `❌ This command can only be used in <#${allowedChannel}>.`,
-            ephemeral: true
+            flags: 64
         });
     }
 
@@ -89,7 +90,7 @@ exports.run = async (bot, interaction) => {
         timestamp
     );
 
-    await interaction.reply({ content: "✅ Your vouch has been sent!", ephemeral: true });
+    await interaction.reply({ content: "✅ Your vouch has been sent!", flags: 64 });
 
     const msg = await interaction.channel.send({ embeds: [embed] });
 
