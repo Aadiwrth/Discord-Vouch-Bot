@@ -1,0 +1,19 @@
+{
+    "bot": {
+        "token": "",
+        "clientId": "",
+        "owners": [""]
+    },
+    "guild": {
+        "id": "",
+        "embedColour": "#2F3136"
+
+    },
+  "channels": {
+    "vouch": ""
+  },
+  "emojis": {
+    "star": "<:star:1380129854904733757>",
+    "react": "<a:orangeheart:1380129241584238693>"
+  }
+}
