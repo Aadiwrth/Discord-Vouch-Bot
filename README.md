@@ -2,9 +2,9 @@
 
 ## Function
 
-- Added a `/vouch`
-- Added a `/restore`
-- Added a `/vouches`
+- `/vouch`
+- `/backup`
+- `/vouches`
 
 ## Description
 
@@ -51,10 +51,11 @@ Make sure to fill the config.json with the following
 
 ## Usage
 ```sh
-node .
+/vouch [rating (1-5)] [msg] option:[proof]
+/vouches
+/backup [channelid]
 ```
 
-/vouch [rating (1-5)] [msg] option:[proof]
 
 ## Common issues
 
