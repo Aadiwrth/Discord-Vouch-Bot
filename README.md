@@ -8,7 +8,6 @@
 
 ## Description
 
-Add the `/vouch [rating (1-5)] [msg] option:[proof]` to your discord server
 
 ![Image](https://cdn.discordapp.com/attachments/1292387872418172978/1384897134201012234/image.png?ex=68541976&is=6852c7f6&hm=18298cd9d4f9dc2abc2bd3bb176e3240322a83bb033a6ae304f294528f1e7fcf&)
 
