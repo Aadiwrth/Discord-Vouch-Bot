@@ -22,7 +22,7 @@ exports.run = async (bot, interaction) => {
     if (!owners.includes(interaction.user.id)) {
         return interaction.reply({
             content: "❌ Only bot owners can use this command.",
-            ephemeral: true
+            flags: 64
         });
     }
 
@@ -33,10 +33,10 @@ exports.run = async (bot, interaction) => {
     const rows = db.prepare("SELECT * FROM vouches ORDER BY id ASC").all();
 
     if (!rows.length) {
-        return interaction.reply({ content: "❌ No vouches found in the database!", ephemeral: true });
+        return interaction.reply({ content: "❌ No vouches found in the database!", flags: 64 });
     }
 
-    await interaction.reply({ content: `📤 Starting backup of ${rows.length} vouches to <#${channel.id}>...`, ephemeral: true });
+    await interaction.reply({ content: `📤 Starting backup of ${rows.length} vouches to <#${channel.id}>...`, flags: 64 });
 
     for (const vouch of rows) {
         const embed = new EmbedBuilder()
@@ -57,5 +57,5 @@ exports.run = async (bot, interaction) => {
         await channel.send({ embeds: [embed] });
     }
 
-    await interaction.followUp({ content: "✅ Backup complete!", ephemeral: true });
+    await interaction.followUp({ content: "✅ Backup complete!", flags: 64 });
 };
