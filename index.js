@@ -71,7 +71,7 @@ bot.on("interactionCreate", async interaction => {
         console.error(`[X] Error running command ${interaction.commandName}:`, err);
         await interaction.reply({
             content: "❌ There was an error executing this command.",
-            ephemeral: true
+            flags: 64
         });
     }
 });
