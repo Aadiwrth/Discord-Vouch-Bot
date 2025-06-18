@@ -25,7 +25,7 @@ npm i
 (if you are using it on vps then use `Screen -S [name]`
 ```
 
-Make sure to full the config.json with the following
+Make sure to fill the config.json with the following
 
 ```sh
 {
